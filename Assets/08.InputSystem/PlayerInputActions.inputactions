@@ -1,0 +1,180 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "a41fc92e-c987-48b3-815f-3ef2b2d91e6e",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "92d921bd-7a7a-4f1e-ba98-f911f94bb15c",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "4b69b801-345e-43c7-9e33-af4f6d0ede3c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MiniMap",
+                    "type": "Button",
+                    "id": "f8427503-ed62-4b49-8862-a5fab7ef0d32",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "3D Vector",
+                    "id": "6c83bd62-acb5-46ce-8fd3-5b23bda8ff8a",
+                    "path": "3DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "0317ae0b-116e-49ee-a465-ea4af537df1b",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2b38320e-faf4-434d-b1be-e3f7400ac991",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "forward",
+                    "id": "907c9204-aad6-4d0f-9002-c883dc7339dc",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "backward",
+                    "id": "4a23185e-4858-4708-a556-0581e5c368fe",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "422e5cf4-b7fa-4f30-9a77-415fb05b31e1",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a798505d-32bf-4133-a77a-732acc2509db",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "MiniMap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Lever",
+            "id": "1bf35488-17f8-4b41-80cd-d9bdfecb8bc5",
+            "actions": [
+                {
+                    "name": "Open",
+                    "type": "Button",
+                    "id": "149afa69-a534-4ffe-b8f3-448cfabcbb5e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fe58a75c-58a4-4c7a-ad71-1407a833a479",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "Open",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Manager",
+            "id": "e61e31a4-990b-415b-a2f7-e3191c6475e3",
+            "actions": [
+                {
+                    "name": "Lobby",
+                    "type": "Button",
+                    "id": "284af13b-c4c9-4fe4-aedb-de8538184a09",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9702f894-59e1-419d-b232-8a8aa767e57d",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoardMosue",
+                    "action": "Lobby",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "KeyBoardMosue",
+            "bindingGroup": "KeyBoardMosue",
+            "devices": []
+        }
+    ]
+}
